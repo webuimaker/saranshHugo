@@ -1,0 +1,22 @@
+<!-- Portfolio Section -->
+<section class="container portfoliosection mainbg" id="portfolio">
+	<div class="row">
+    	<div class="col-lg-12 col-md-12"><h2>{{ .Site.Data.portfolio.title | safeHTML}}</h2></div>
+        
+        <div class="col-md-12 mt-2 photo-gallery">
+            	<div class="row photos">
+				
+				{{ range .Site.Data.portfolio.portfolioList }}	
+                    <div class="col-lg-4 col-md-4 item">
+						<a href="{{ .image }}" data-lightbox="photos" data-title="{{ .description | safeHTML }}">
+							<div class="d-flex portfoliocol">
+								<h4 class="align-self-end">{{ .heading | safeHTML }}</h4>
+							</div>
+						</a>
+                    </div>
+				{{ end }}
+                  
+            	</div>
+            </div>
+    </div>
+</section>

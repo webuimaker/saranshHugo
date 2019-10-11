@@ -1,0 +1,30 @@
+{
+  
+  "title": "/ about me",
+  "info": "over the years i've acquired skills which help me create beautiful, useful products",
+  "cvUrl": "#",
+  "aboutList":[
+	{
+		"heading": "data driven",
+		"description": "i want to measure the impact of what i build",
+		"linkText": "githubexample",
+		"linkUrl": "#"
+	},{
+		"heading": "analytical",
+		"description": "i decompose complex problems into smaller parts so they can be tackled individually",
+		"linkText": "",
+		"linkUrl": "#"
+	},{
+		"heading": "tech background",
+		"description": "i've written code for almost 10 years. this helps me create and work with high-performance dev teams",
+		"linkText": "",
+		"linkUrl": "#"
+	},{
+		"heading": "research",
+		"description": "it's not only about finding answers, but also about asking the right question. sounds cliched but i've experienced that asking 3 'why's in a row can help you uncover the real pain-point of your customer (or your wife..)",
+		"linkText": "",
+		"linkUrl": "#"
+	}
+  ]
+}
+

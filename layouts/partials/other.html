@@ -1,0 +1,25 @@
+<!-- Few Other Section -->
+<section class="container aboutsection mainbg" id="other">
+    	<div class="row align-items-center">
+            <div class="col-lg-12 col-md-12">
+            	<h2>{{ .Site.Data.other.title | safeHTML}}</h2>
+            </div>
+        </div>
+        
+        <div class="row aboutcontent interestsection mt-4">
+        	{{ range .Site.Data.other.otherList }}				
+				<div class="col-lg-6 col-md-6 {{ if .pos }} offset-md-6 {{end}}">
+					<div class="d-flex">
+						<div class="cf-icon"><img src="images/icon4.jpg" alt=""></div>
+						<div class="cf-text">
+							<h3>{{ .heading | safeHTML   }}</h3>
+						</div>
+					</div>
+					
+					<div class="w-100"><p>{{ .description | safeHTML  }}</p></div>
+				</div>
+			{{ end }}
+			
+		
+        </div>
+</section>

@@ -1,0 +1,32 @@
+<!-- About Section -->
+<section class="container aboutsection mainbg" id="aboutme">
+    	<div class="row align-items-center">
+        	<div class="col-lg-4 col-md-4 text-center"><img src="images/saranshpic.jpg" alt=""></div>
+            <div class="col-lg-8 col-md-8">
+            	<h2>{{ .Site.Data.about.title}}</h2>
+                <p>{{ .Site.Data.about.info}}</p>
+                <a href="{{ .Site.Data.about.cvUrl}}" class="btn dwnloadbtn mt-4"><i class="fa fa-download"></i> download resume</a>
+            </div>
+        </div>
+        
+        <div class="row aboutcontent">
+		
+			{{ range .Site.Data.about.aboutList }}	
+		
+				<div class="col-lg-6 col-md-6">
+					<div class="d-flex">
+						<div class="cf-icon"><img src="images/icon4.jpg" alt=""></div>
+						<div class="cf-text">
+							<h3>{{ .heading }}</h3>
+							<p>{{ .description }}</p>
+							{{ if .linkText }}
+							<p><a href="{{ .linkUrl }}"><img src="images/connector.jpg" alt="">{{ .linkText }}</a></p>
+							{{ end }}
+						</div>
+					</div>
+				</div>
+				
+			{{ end }}
+            
+        </div>
+</section>

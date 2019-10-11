@@ -1,0 +1,71 @@
+{
+  
+  "title": "/ skills",
+  "skillList":[
+	{
+		"heading": "tech",
+		"image": "images/defaultslider.jpg",
+		"list": [
+			{
+			  "name" : "python, pandas"	
+			},{
+			  "name" : "numpy"	
+			}
+		]
+	},
+	{
+		"heading": "Product",
+		"image": "images/defaultslider.jpg",
+		"list": [
+			{
+			  "name" : "feature prioritization"	
+			},{
+			  "name" : "roadmap creation"		
+			}
+		]
+	},{
+		"heading": "business & management",
+		"image": "images/defaultslider.jpg",
+		"list": [
+			{
+			  "name" : "stakeholder management"
+			},{
+			  "name" : "business negotiations"
+			}
+		]
+	},
+	{
+		"heading": "tech",
+		"image": "images/defaultslider.jpg",
+		"list": [
+			{
+			  "name" : "python, pandas"	
+			},{
+			  "name" : "numpy"	
+			}
+		]
+	},
+	{
+		"heading": "Product",
+		"image": "images/defaultslider.jpg",
+		"list": [
+			{
+			  "name" : "feature prioritization"	
+			},{
+			  "name" : "roadmap creation"		
+			}
+		]
+	},{
+		"heading": "business & management",
+		"image": "images/defaultslider.jpg",
+		"list": [
+			{
+			  "name" : "stakeholder management"
+			},{
+			  "name" : "business negotiations"
+			}
+		]
+	}
+  ]
+}
+

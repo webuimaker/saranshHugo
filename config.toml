@@ -1,0 +1,80 @@
+baseURL = "/"
+languageCode = "en-us"
+googleAnalytics = "UA-XXXXXXXXX-X"
+description = "Basic personal site info."
+title = ":: Saransh Chauhan ::"
+
+[author]
+  name = "Saransh Chauhan"
+
+
+# navigation
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "/ about me"
+    pre = ""
+    url = "#aboutme"
+    weight = 1
+
+  [[menu.main]]
+    name = "/ skills"
+    post = ""
+    pre = ""
+    url = "#skills"
+    weight = 2
+
+  [[menu.main]]
+    name = "/ portfolio"
+    post = ""
+    pre = ""
+    url = "#portfolio"
+    weight = 3
+
+  [[menu.main]]
+    name = "/ blog"
+    post = ""
+    pre = ""
+    url = "#"
+    weight = 4
+
+  [[menu.main]]
+    name = "/ other interests"
+    post = ""
+    pre = ""
+    url = "#other"
+    weight = 5
+
+  [[menu.main]]
+    name = "/ contact me"
+    post = ""
+    pre = ""
+    url = "#"
+    weight = 6
+	
+[params]
+
+ email = "chauhan.saransh@gmail.com"
+ cv = "chauhan.saransh@gmail.com"
+# social icon
+  [[params.social]]
+  icon = "fa-github-square"
+  URL = "#"
+
+  [[params.social]]
+  icon = "fa-linkedin-square"
+  URL = "#"
+
+  [[params.social]]
+  icon = "fa-medium"
+  URL = "#"
+
+  [[params.social]]
+  icon = "fa-envelope-square"
+  URL = "mailto:chauhan.saransh@gmail.com"
+  
+  
+  
+  
+  

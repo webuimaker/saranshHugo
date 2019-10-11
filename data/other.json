@@ -1,0 +1,21 @@
+{
+  
+  "title": "/ a few other interests",
+  "otherList":[
+	{
+		"heading": "international diplomacy and geopolitics",
+		"description": "i am primarily interested in asian geopolitical scene; topics like india-pakistan relations, china's diplomatic strategy as a rising global power, etc.",
+		"pos": ""
+		
+	},{
+		"heading": "hindi",
+		"description": "over half the content on the internet is in english, while not more than 20% of the world's population speaks english. i am interested in creating web content in non-roman languages and making the internet more accessible to people who don't speak english",
+		"pos": ""
+	},{
+		"heading": "climate change &amp; global warming",
+		"description": "over half the content on the internet is in english, while not more than 20% of the world's population speaks english. i am interested in creating web content in non-roman langauges and making the internet more accessible to people who don't speak english",
+		"pos": "right"
+	}
+  ]
+}
+

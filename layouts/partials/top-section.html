@@ -1,0 +1,60 @@
+<!-- Top Section Container -->
+{{ $baseUrl := .Site.BaseURL }}
+<section class="container">
+	<div class="row">
+    	<div class="col-lg-4 col-md-4 headleft">
+        	<div class="navbar navbar-expand-lg bsnav bsnav-sidebar">
+              <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-mobile">
+				{{ $currentPage := . }}
+				{{ range .Site.Menus.main }}
+					{{ if .HasChildren }}
+					<li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+						<a href="#" class="nav-item">
+							{{ .Pre }}
+							<span>{{ .Name }}</span>
+						</a>
+					</li>
+					<ul class="sub-menu">
+						{{ range .Children }}
+							<li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+								<a href="{{ .URL }}" class="nav-item">{{ .Name }}</a>
+							</li>
+						{{ end }}
+					</ul>
+					{{ else }}
+					<li>
+						<a href="/{{ .URL }}" class="nav-item">
+							{{ .Pre }}
+							<span>{{ .Name }}</span>
+						</a>
+					</li>
+					{{ end }}
+				{{ end }}
+                </ul>
+                </div>
+                
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-mobile social d-flex">
+						{{ range .Site.Params.social }}
+							<li class="align-items-center"><a href="{{ .URL }}"><i class="fa {{ .icon }}"></i></a></li>
+							
+						 {{ end }}
+                      
+                    </ul>
+                </div>
+   			 </div>
+    
+            <div class="bsnav-mobile">
+              <div class="bsnav-mobile-overlay"></div>
+              <div class="navbar"></div>
+            </div>
+        </div>
+        
+        <div class="col-lg-8 col-md-8 headright">
+        	<h1>{{ .Site.Data.top.title}}</h1>
+            <h3>{{ .Site.Data.top.info}}</h3>
+        </div>
+    </div>
+</section>

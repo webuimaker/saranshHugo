@@ -1,0 +1,26 @@
+{
+  
+  "title": "/ portfolio",
+  "info": "over the years i've acquired skills which help me create beautiful, useful products",
+  "cvUrl": "#",
+  "portfolioList":[
+	{
+		"heading": "xerox ---- <br> airport parking  ffdgdf",
+		"description": "Fusce eget ex eget nulla vestibulum pretium vitae non enim.",
+		"image": "images/demopic.jpg"
+	},{
+		"heading": "xerox ---- <br> airport parking",
+		"description": "Fusce eget ex eget nulla vestibulum pretium vitae non enim.",
+		"image": "images/demopic.jpg"
+	},{
+		"heading": "xerox ---- <br> airport parking",
+		"description": "Fusce eget ex eget nulla vestibulum pretium vitae non enim.",
+		"image": "images/demopic.jpg"
+	},{
+		"heading": "xerox ---- <br> airport parking",
+		"description": "Fusce eget ex eget nulla vestibulum pretium vitae non enim.",
+		"image": "images/demopic.jpg"
+	}
+  ]
+}
+

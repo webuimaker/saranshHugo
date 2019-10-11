@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+	{{ "<!-- mobile responsive meta -->" | safeHTML }}
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="{{ with .Description }}
+			{{ . }}
+			{{ else }}
+			{{if .IsPage}}{{ .Summary }}
+			{{ else }}{{ with .Site.Params.description }}
+			{{ . }}
+			{{ end }}{{ end }}{{ end }}">
+		{{ with .Site.Params.author }}
+		<meta name="author" content="{{ . }}">{{ end }}
+		{{ "<!-- Bootstrap -->" | safeHTML }}
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		{{ "<!-- Font Awesome CSS -->" | safeHTML }}		 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+     {{ "<!-- Custom Css -->" | safeHTML }}
+	<link href="{{ .Site.BaseURL }}css/style.css" rel="stylesheet">
+	{{ "<!-- Custom Css -->" | safeHTML }}
+	<link href="c{{ .Site.BaseURL }}ss/custommedia.css" rel="stylesheet">
+	{{ "<!-- saransh.css -->" | safeHTML }}
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}eurostile_for_saransh.css">
+    {{ "<!-- sidebar nav -->" | safeHTML }}
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/fitodac/bsnav/master/dist/bsnav.min.css">
+    {{ "<!-- Custom Css -->" | safeHTML }}    
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}owlcarousel/owl.carousel.min.css">
+	{{ "<!-- owl.theme -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}owlcarousel/owl.theme.default.min.css">
+	{{ "<!-- lightbox -->" | safeHTML }}    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+<title>{{ .Title }} - {{ .Site.Title }}  </title>
+{{ "<!--Favicon-->" | safeHTML }}
+    <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }} " type="image/x-icon">
+    <link rel="icon" href="{{ "images/favicon.ico" | absURL }} " type="image/x-icon">
+
+    {{ if .Site.Params.googleAnalitycsID }}
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer',{{ .Site.Params.googleAnalitycsID }});</script>
+    <!-- End Google Tag Manager -->
+    {{ end }}
+	
+	{{ $baseUrl := .Site.BaseURL }}
+</head>
+
+<body>
+<!-- Top Section Container -->
+
