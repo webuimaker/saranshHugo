@@ -10,7 +10,7 @@
 
 @media screen and (max-width:1023px) {
 	.headright h1{font-size:52px;}
-	.aboutsection h2, .skillsection h2, .portfoliosection h2{font-size:56px;}
+	.aboutsection h2, .skillsection h2, .portfoliosection h2{font-size:38px;}
 	.aboutcontent{margin-top:25px;}
 	.newbtn{font-size:18px; margin-right:5px;}
 	.newbtn i.fa{margin-right:4px;}
@@ -23,16 +23,20 @@
 
 
 @media screen and (max-width: 767px) {
+	.navbar-expand-lg.bsnav-sidebar{width:30px;}
   .aboutcontent .cf-icon{display:none;}
   .aboutcontent .cf-text{width:100%;}
-  .headright{padding:15px;}
+  .aboutsection p{font-size:1.3rem;}
+  .aboutcontent .cf-text h3{ font-size:28px;}
+  .headright{padding:15px !important;}
+  .headright h1 {font-size:45px;}
   .headleft, .skillsection, .portfoliosection, .aboutsection{padding:15px;}
   .footer{text-align:center;}
   .footer .social{text-align:center; margin-top:15px;}
   .navbar-expand-lg .navbar-toggler{display:block;}
   .collapse:not(.show){display:none;}
   .navbar-expand-lg.bsnav-sidebar{width:70px !important;}
-  
+  .carouselsection{padding:0px;}
   .carouselsection .imgsection{margin-top:0;}
   .carouselsection .owl-theme .owl-nav{display:none !important;}
   .carouselsection .owl-theme .owl-dots{display:block; margin-top:10px;}

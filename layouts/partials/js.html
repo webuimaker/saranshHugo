@@ -71,6 +71,8 @@ $(document).ready(function(){
             $(document).ready(function() {
               $('.owl-carousel').owlCarousel({
 				items: 2,	
+				responsiveClass:true,
+				loop:true,
 				center: true,	
 				autoplay: true,
 			  itemsDesktop : [1000,2], // 2 items between 1000px and 901px
@@ -80,8 +82,23 @@ $(document).ready(function(){
 			  navigation: true,
 			  lazyLoad: true,
 			  pagination: false,
-			  scrollPerPage : true
+			  scrollPerPage : true,
+			  
               })
+			  
+			  
+			  $( '.owl-carousel' ).owlCarousel({
+    items: 6,
+    nav: true,
+    dots: false,
+    mouseDrag: true,
+    responsiveClass: true,
+});
+
+
+			  
+			  
+ 
 			  
 			  
             })
