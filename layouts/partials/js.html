@@ -82,17 +82,21 @@ $(document).ready(function(){
 			  navigation: true,
 			  lazyLoad: true,
 			  pagination: false,
-			  scrollPerPage : true,
-			  
+			  scrollPerPage : true,		  
+				responsive: {
+					0:{
+					  items: 1
+					},
+					480:{
+					  items: 3
+					},
+					769:{
+					  items: 2
+					}
+				}
               })
 			  
 			  
-			  $( '.owl-carousel' ).owlCarousel({
-    items: 6,
-    nav: true,
-    dots: false,
-    mouseDrag: true,
-    responsiveClass: true,
 });
 
 
@@ -101,5 +105,5 @@ $(document).ready(function(){
  
 			  
 			  
-            })
+            
 </script>
